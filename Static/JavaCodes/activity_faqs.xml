@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".FaqsActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        tools:context="sonatasomething.thesecond.TrainingActivity"
+        android:id="@+id/linear">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView3"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="FAQs"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+    <ExpandableListView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
+        android:divider="#020101"
+        android:dividerHeight="0.5dp"
+        android:id="@+id/exp_list"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="4">
+
+    </ExpandableListView>
+
+</LinearLayout>
